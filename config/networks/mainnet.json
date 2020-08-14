@@ -1,0 +1,64 @@
+{
+  "id": "bancoin.mainnet",
+  "name": "Bancoin Mainnet",
+  "title": "Bancoin Mainnet",
+  "server": "http://80.208.227.80:4003",
+  "description": "La Mainnet Bancoin debe elegirse en la Mayoria de los casos.",
+  "imagePath": "networks/ark.png",
+  "apiVersion": 2,
+  "slip44": "111",
+  "market": {
+    "enabled": false,
+    "ticker": "BIN"
+  },
+  "feeStatistics": [
+    {
+      "type": 0,
+      "fees": {
+        "avgFee": 10000000,
+        "maxFee": 10000000,
+        "minFee": 10000000
+      }
+    },
+    {
+      "type": 1,
+      "fees": {
+        "avgFee": 500000000,
+        "maxFee": 500000000,
+        "minFee": 500000000
+      }
+    },
+    {
+      "type": 2,
+      "fees": {
+        "avgFee": 2500000000,
+        "maxFee": 2500000000,
+        "minFee": 2500000000
+      }
+    },
+    {
+      "type": 3,
+      "fees": {
+        "avgFee": 100000000,
+        "maxFee": 100000000,
+        "minFee": 100000000
+      }
+    }
+  ],
+  "constants": {
+    "activeDelegates": 51,
+    "epoch": "2020-08-13T15:33:49.172Z"
+  },
+  "vendorField": {
+    "maxLength": 255
+  },
+  "nethash": "971607f461cab714e475106c9577d5be6ca5f203469ce86a5067be4ec4e01813",
+  "explorer": "http://80.208.227.80:4200",
+  "knownWalletsUrl": "https://raw.githubusercontent.com/bancoin-blockchain/common/master/mainnet/known-wallets.json",
+  "token": "BIN",
+  "subunit": "bintoshi",
+  "symbol": "⟐",
+  "fractionDigits": 8,
+  "version": 25,
+  "wif": 207
+}
