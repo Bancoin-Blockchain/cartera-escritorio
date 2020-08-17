@@ -87,7 +87,7 @@ export default {
   @apply .cursor-pointer;
 }
 .WalletButton__ledger-settings > a > .rounded-full {
-  @apply .cursor-pointer .fill-current .text-theme-option-button-text;
+  @apply .cursor-pointer .fill-current .text-whitex;
   transition: opacity 0.4s;
 }
 .WalletButton__ledger-settings > a:hover > .rounded-full {

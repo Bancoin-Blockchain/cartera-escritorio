@@ -113,7 +113,7 @@ export default {
       }
 
       if (includes(state.wallets[wallet.profileId], wallet)) {
-        throw new Error(`Cannot create wallet '${wallet.id}' - it already exists`)
+        throw new Error(`No se puede crear el monedero '${wallet.id}' - ya existe`)
       }
 
       state.wallets[wallet.profileId].push(wallet)
@@ -126,7 +126,7 @@ export default {
     },
     UPDATE (state, wallet) {
       if (!includes(state.wallets[wallet.profileId], wallet)) {
-        throw new Error(`Cannot update wallet '${wallet.id}' - it does not exist on the state`)
+        throw new Error(`No se puede actualizar el monedero '${wallet.id}' - no existe en el estado`)
       }
       state.wallets[wallet.profileId] = unionBy([wallet, ...state.wallets[wallet.profileId]], 'id')
     },
@@ -134,10 +134,10 @@ export default {
       const profileId = wallets[0].profileId
       wallets.forEach(wallet => {
         if (profileId !== wallet.profileId) {
-          throw new Error(`Updating wallets of different profile is not supported ('${profileId}' != '${wallet.profileId}')`)
+          throw new Error(`No se admite la actualización de monederos de diferentes perfiles ('${profileId}' != '${wallet.profileId}')`)
         }
         if (!includes(state.wallets[profileId], wallet)) {
-          throw new Error(`Cannot update wallet '${wallet.id}' - it does not exist on the state`)
+          throw new Error(`No se puede actualizar el monedero '${wallet.id}' - no existe en el estado`)
         }
       })
       state.wallets[profileId] = unionBy([...wallets, ...state.wallets[profileId]], 'id')
@@ -146,7 +146,7 @@ export default {
       if (state.wallets[wallet.profileId]) {
         const index = state.wallets[wallet.profileId].findIndex(profileWallet => profileWallet.id === wallet.id)
         if (index === -1) {
-          throw new Error(`Cannot delete wallet '${wallet.id}' - it does not exist on the state`)
+          throw new Error(`No se puede borrar el monedero '${wallet.id}' - no existe en el estado`)
         }
         state.wallets[wallet.profileId].splice(index, 1)
       }

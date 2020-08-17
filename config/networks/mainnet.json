@@ -3,7 +3,7 @@
   "name": "Bancoin Mainnet",
   "title": "Bancoin Mainnet",
   "server": "http://80.208.227.80:4003",
-  "description": "La Mainnet Bancoin debe elegirse en la Mayoria de los casos.",
+  "description": "La Red bancoin debe ser elegida en la mayoria de los casos para esta wallet",
   "imagePath": "networks/ark.png",
   "apiVersion": 2,
   "slip44": "111",
@@ -47,18 +47,20 @@
   ],
   "constants": {
     "activeDelegates": 51,
-    "epoch": "2020-08-13T15:33:49.172Z"
+    "epoch": "2020-08-16T22:00:28.086Z"
   },
   "vendorField": {
     "maxLength": 255
   },
-  "nethash": "971607f461cab714e475106c9577d5be6ca5f203469ce86a5067be4ec4e01813",
+  "nethash": "6aceeb026c1cbd57c7d22f63ebf5fa034e049258b9bf87985f88346f2f918b9b",
   "explorer": "http://80.208.227.80:4200",
-  "knownWalletsUrl": "https://raw.githubusercontent.com/bancoin-blockchain/common/master/mainnet/known-wallets.json",
   "token": "BIN",
   "subunit": "bintoshi",
   "symbol": "⟐",
   "fractionDigits": 8,
   "version": 25,
-  "wif": 207
+  "wif": 157,
+  "knownWallets": {
+    "BLYZpM2xi5sU6m75KBMihYBjVd6n3xSLrS": "Cartera Genesis Mainnet"
+  }
 }

@@ -2,7 +2,7 @@
   <button
     class="flex items-center"
   >
-    <span class="rounded border border-theme-settings-border mr-2">
+    <span class="rounded border border-theme-transaction-detail-gradient2 mr-2">
       <SvgIcon
         :class="{
           'rotate-vertical': isOpen

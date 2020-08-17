@@ -2,7 +2,7 @@
   <div class="WalletButton__create">
     <RouterLink
       :to="{ name: 'wallet-new' }"
-      class="font-bold text-center"
+      class="font-bold text-center text-whitex"
     >
       <span
         v-tooltip="hideText ? $t('PAGES.WALLET_ALL.CREATE_WALLET') : ''"
@@ -56,7 +56,7 @@ export default {
   @apply .w-full .text-center
 }
 .WalletButton__create > a > .rounded-full {
-  @apply .cursor-pointer .fill-current .text-theme-option-button-text;
+  @apply .cursor-pointer .fill-current .text-whitex;
   transition: opacity 0.4s;
 }
 .WalletButton__create > a:hover > .rounded-full {

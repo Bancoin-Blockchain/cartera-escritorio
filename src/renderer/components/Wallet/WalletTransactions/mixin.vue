@@ -5,7 +5,7 @@
       class="WalletTransactions__notice bg-theme-feature flex flex-row"
     >
       <div
-        class="mb-2 py-4 px-6 rounded-l text-theme-voting-banner-text bg-theme-voting-banner-background w-full text-center"
+        class="mb-2 py-4 px-6 rounded-l text-whitex bg-theme-voting-banner-background w-full text-center"
       >
         {{ newTransactionsNotice }}
       </div>

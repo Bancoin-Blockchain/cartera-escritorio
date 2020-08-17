@@ -1,7 +1,7 @@
 import { PLUGINS } from '@config'
 import { chunk } from 'lodash'
+import got from 'got'
 import packageJson from 'package-json'
-import { reqwest } from '@/utils/http'
 
 const CHUNKSIZE = 50
 
@@ -47,9 +47,7 @@ class NpmAdapter {
   async fetchPlugins (options = {}) {
     const keywords = PLUGINS.keywords.join(' ')
 
-    const {
-      body
-    } = await reqwest('/-/v1/search', {
+    const { body } = await got('/-/v1/search', {
       query: {
         text: `keywords:${keywords}`,
         from: options.from || 0,
@@ -57,8 +55,7 @@ class NpmAdapter {
         t: Date.now()
       },
       baseUrl: this.baseUrl,
-      json: true,
-      timeout: 3000
+      json: true
     })
 
     return {

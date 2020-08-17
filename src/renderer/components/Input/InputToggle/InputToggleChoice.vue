@@ -4,8 +4,8 @@
       'px-3 py-2 antialiased': true,
       'rounded-l': isFirst,
       'rounded-r': isLast,
-      'InputToggleChoice--selected bg-blue text-white font-semibold shadow-lg': isSelected,
-      'bg-theme-input-toggle-choice text-theme-input-toggle-choice-text hover:bg-theme-input-toggle-choice-hover': !isSelected
+      'InputToggleChoice--selected bg-blue text-red font-semibold shadow-lg': isSelected,
+      'bg-theme-input-toggle-choice text-theme-input-toggle-choice-text': !isSelected
     }"
     type="button"
     @click="emitSelect(choice)"

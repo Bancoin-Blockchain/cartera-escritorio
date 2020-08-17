@@ -1,4 +1,58 @@
 @font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Regular.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Bold.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-SemiBold.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Light.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Black.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Medium.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-Thin.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-UltraBold.otf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Arlon';
+  src: url('../assets/fonts/Arlon-UltraLight.otf');
+  font-weight: 200;
+}
+
+@font-face {
   font-family: 'Proxima Nova';
   src: url('../assets/fonts/Proxima_Nova_Thin.otf');
   font-weight: 200;

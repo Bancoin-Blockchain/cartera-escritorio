@@ -13,7 +13,7 @@
           rx="35"
           ry="40"
           transform="translate(0) rotate(240 37.5 37.5)"
-          fill="#4c5082"
+          fill="#8e32ff"
           fill-opacity="0.45"
           x="-20"
           y="0"
@@ -76,7 +76,7 @@
         <ButtonClipboard
           :value="showPublicKey ? publicKey : address"
           view-box="0 0 15 18"
-          class="text-inherit opacity-50 mx-2"
+          class="text-white opacity-50 mx-2"
         />
 
         <button
@@ -85,7 +85,7 @@
             content: labelTooltip,
             trigger:'hover'
           }"
-          class="text-inherit opacity-50"
+          class="text-white opacity-50"
           @click="togglePublicKey"
         >
           <SvgIcon

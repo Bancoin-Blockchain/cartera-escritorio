@@ -93,7 +93,7 @@
                   <SvgIcon
                     name="more"
                     view-box="0 0 5 15"
-                    class="text-inherit"
+                    class="text-red"
                   />
                 </span>
 
@@ -105,7 +105,7 @@
                     <SvgIcon
                       :name="itemScope.item.icon"
                       view-box="0 0 16 16"
-                      class="text-inherit flex-none mr-2"
+                      class="text-red flex-none mr-2"
                     />
                     <span class="font-semibold">
                       {{ itemScope.item.value }}
@@ -247,7 +247,7 @@ export default {
   @apply px-5 py-2 border-l border-theme-wallet-overview-border;
 }
 .WalletGrid__wallet__name {
-  color: #037cff;
+  color: #bc76f9;
 }
 .WalletGrid__wallet .identicon {
   opacity: 0.5;

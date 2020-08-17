@@ -13,8 +13,8 @@
   >
     <span
       :class="{
-        'bg-theme-option-button-text': !inputIsActive,
-        'bg-blue': inputIsActive
+        'bg-red-lighter': !inputIsActive,
+        'bg-purpurito': inputIsActive
       }"
       :style="{
         'border-color': backgroundColor

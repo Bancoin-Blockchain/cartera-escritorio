@@ -1,43 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 135 135">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #eaf1fa;
-      }
-
-      .cls-2 {
-        clip-path: url(#clip-Canvas);
-      }
-
-      .cls-3 {
-        clip-path: url(#clip-path);
-      }
-
-      .cls-4 {
-        fill: #d3deed;
-      }
-
-      .cls-5 {
-        fill: #b0c0d6;
-        opacity: 0.251;
-      }
-    </style>
-    <clipPath id="clip-path">
-      <circle class="cls-1" cx="67.5" cy="67.5" r="67.5"/>
-    </clipPath>
-    <clipPath id="clip-Canvas">
-      <rect width="135" height="135"/>
-    </clipPath>
-  </defs>
-  <g class="cls-2">
-    <g>
-      <g>
-        <circle class="cls-1" cx="67.5" cy="67.5" r="67.5"/>
-        <g class="cls-3">
-          <path class="cls-4" d="M67.645,16-111,204,67.645-85,245,204ZM-12.812,143.663,15.737,113.5H119.119l28.549,30.168ZM36.068,92.509,67.645,60.155,98.789,92.509Z"/>
-          <path class="cls-5" d="M11.628,2.026,126.754,120.918,7.05,235.811-108.076,116.919Z"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 135 135" style="enable-background:new 0 0 135 135;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#A55BFF;}
+	.st2{fill:#D2ADFF;}
+	.st3{opacity:0.251;fill:#D2ADFF;enable-background:new    ;}
+</style>
+<g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M121.6,48.2L90.9,11C84.8,3.7,76.2,0,67.5,0S50.2,3.7,44.1,11L13.4,48.2c-4.6,5.6-6.9,12.5-6.9,19.3
+				c0,6.9,2.3,13.7,6.9,19.3L44.1,124c6.1,7.3,14.7,11,23.4,11s17.3-3.7,23.4-11l30.7-37.2c4.6-5.6,6.9-12.5,6.9-19.3
+				C128.5,60.6,126.2,53.8,121.6,48.2z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st0">
+			<g>
+				<circle class="st1" cx="67.5" cy="67.5" r="67.5"/>
+				<g>
+					<g>
+						<path class="st2" d="M58.7,82.6l-25.5,31.2c-5.6,6.8-5.6,16.7,0,23.5l22,26.9c5.3,6.4,15.1,6.4,20.4,0l25.3-30.9
+							c3.7-4.5,3.7-10.9,0-15.4l-8.3-10.1c-3.3-4-9.3-4-12.6,0l-0.4,0.5c-2.2,2.6-2.2,6.5,0,9.1l4.3,5.3c1.4,1.7,1.4,4.1,0,5.8
+							l-16.2,19.8c-1.2,1.4-3.4,1.4-4.5,0l-16.3-19.9c-1.4-1.7-1.4-4,0-5.7l22.8-27.9c8.6-10.5,24.7-10.5,33.3,0l15.1,18.4
+							c5.9,7.2,5.9,17.5,0,24.6l-34.3,41.9c-9.5,11.6-27.2,11.6-36.7,0L17.8,144c-8.8-10.7-8.8-26.2,0-37l54.1-66.1
+							c2.3-2.8,2.3-6.8,0-9.6l-1.4-1.7c-2.7-3.2-7.6-3.2-10.3,0L5.1,97c-13.6,16.6-13.6,40.4,0,57l32.3,39.5
+							c14.4,17.6,41.4,17.6,55.8,0l39.8-48.6c9.2-11.3,9.2-27.5,0-38.7l-19.3-23.5C99.6,65.2,73,65.2,58.7,82.6z"/>
+					</g>
+					<path class="st3" d="M25.8,2.9l106.1,127L4,235.7l-106.1-127L25.8,2.9z"/>
+					<path class="st3" d="M25.4,26.8l106.1,127L3.6,259.7l-106.1-127L25.4,26.8z"/>
+					<path class="st3" d="M15.2,40.7l106.1,127L-6.5,273.5l-106.1-127L15.2,40.7z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

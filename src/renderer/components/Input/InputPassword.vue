@@ -195,21 +195,9 @@ export default {
 
       if (this.minLength && this.model.length < this.minLength) {
         return this.$t('VALIDATION.PASSWORD.TOO_SHORT', [this.minLength])
-      }
-
-      if (!this.model.match(/[a-z]/)) {
-        return this.$t('VALIDATION.PASSWORD.LOWER_CASE')
-      }
-
-      if (!this.model.match(/[A-Z]/)) {
-        return this.$t('VALIDATION.PASSWORD.UPPER_CASE')
-      }
-
-      if (!this.model.match(/[0-9]/)) {
+      } else if (!this.model.match(/[0-9]+/)) {
         return this.$t('VALIDATION.PASSWORD.NUMBERS')
-      }
-
-      if (!this.model.match(/\W|_/)) {
+      } else if (!this.model.match(/[^a-zA-Z0-9]+/)) {
         return this.$t('VALIDATION.PASSWORD.SPECIAL_CHARACTERS')
       }
 
@@ -229,29 +217,22 @@ export default {
 
         return true
       },
-      isValid (value) {
-        if (!value) {
-          return false
-        }
-
-        if (!this.isRequired && !value.length) {
+      isValid () {
+        if (!this.isRequired && !this.model.length) {
+          return true
+        } else if (!this.isCreate) {
           return true
         }
 
-        if (!this.isCreate) {
-          return true
-        }
-
-        if (this.minLength && value.length < this.minLength) {
+        if (this.minLength && this.model.length < this.minLength) {
+          return false
+        } else if (!this.model.match(/[0-9]+/)) {
+          return false
+        } else if (!this.model.match(/[^a-zA-Z0-9]+/)) {
           return false
         }
 
-        const containsLowercase = /[a-z]/.test(value)
-        const containsUppercase = /[A-Z]/.test(value)
-        const containsNumbers = /[0-9]/.test(value)
-        const containsSpecial = /\W|_/.test(value)
-
-        return containsLowercase && containsUppercase && containsNumbers && containsSpecial
+        return true
       }
     }
   }

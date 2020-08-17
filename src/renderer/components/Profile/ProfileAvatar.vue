@@ -27,7 +27,7 @@
       :has-custom-style="true"
       :size="letterSize"
       tag="div"
-      class="ProfileAvatar__letter bg-theme-feature-item-selected text-theme-feature-item-selected-text select-none"
+      class="ProfileAvatar__letter bg-theme-feature-item-selected text-red select-none"
     >
       <slot />
     </ButtonLetter>

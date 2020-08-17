@@ -5,7 +5,7 @@
   >
     <div
       :class="hasControls ? 'border-dashed' : 'border-solid'"
-      class="MenuOptionsItem__container transition flex items-center justify-between mx-10 py-5 border-b border-theme-settings-border"
+      class="MenuOptionsItem__container transition flex items-center justify-between mx-10 py-5 border-b border-theme-transaction-detail-gradient2"
     >
       <div class="select-none">
         <slot name="title">
@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .MenuOptionsItem:hover {
-  background-color: var(--theme-settings-hover);
+  background-color: var(--theme-secondary-feature);
   color: var(--theme-settings-text-hover);
 }
 .MenuOptionsItem:hover > .MenuOptionsItem__container {

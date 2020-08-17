@@ -1,7 +1,7 @@
 <template>
   <div class="WalletButton__export">
     <a
-      class="font-bold text-center"
+      class="font-bold text-center text-whitex"
       @click="toggle"
     >
       <span
@@ -67,7 +67,7 @@ export default {
   @apply .w-full .text-center
 }
 .WalletButton__export > a > .rounded-full {
-  @apply .cursor-pointer .fill-current .text-theme-option-button-text;
+  @apply .cursor-pointer .fill-current .text-whitex;
   transition: opacity 0.4s;
 }
 .WalletButton__export > a:hover > .rounded-full {

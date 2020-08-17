@@ -11,11 +11,11 @@ h4 {
 }
 
 a {
-  @apply .no-underline .text-blue .transition
+  @apply .no-underline .text-whitex-light .transition
 }
 
 a:hover {
-  @apply .text-blue-dark .underline
+  @apply .text-blue-light .underline
 }
 
 a:active {

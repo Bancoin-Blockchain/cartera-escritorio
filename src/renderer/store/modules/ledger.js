@@ -467,7 +467,7 @@ export default {
     /**
      * Get address and public key from ledger wallet.
      * @param  {Number} accountIndex Index of wallet to get data for.
-     * @return {Promise<string>}
+     * @return {(String|Boolean)}
      */
     async getVersion ({ dispatch }) {
       try {
@@ -517,7 +517,7 @@ export default {
     /**
      * Get public key from ledger wallet.
      * @param  {Number} [accountIndex] Index of wallet to get public key for.
-     * @return {Promise<string>}
+     * @return {(String|Boolean)}
      */
     async getPublicKey ({ dispatch }, accountIndex) {
       try {
@@ -532,18 +532,18 @@ export default {
     },
 
     /**
-     * Sign transaction for ledger wallet using ecdsa signatures.
+     * Sign transaction for ledger wallet.
      * @param  {Object} obj
-     * @param  {Buffer} obj.transactionBytes Bytes of transaction.
+     * @param  {String} obj.transactionHex Hex of transaction.
      * @param  {Number} obj.accountIndex Index of wallet to sign transaction for.
-     * @return {Promise<string>}
+     * @return {(String|Boolean)}
      */
-    async signTransaction ({ dispatch }, { transactionBytes, accountIndex } = {}) {
+    async signTransaction ({ dispatch }, { transactionHex, accountIndex } = {}) {
       try {
         return await dispatch('action', {
           action: 'signTransaction',
           accountIndex,
-          data: transactionBytes
+          data: transactionHex
         })
       } catch (error) {
         logger.error(error)
@@ -552,58 +552,18 @@ export default {
     },
 
     /**
-     * Sign transaction for ledger wallet using schnorr signatures.
+     * Sign message for ledger wallet.
      * @param  {Object} obj
-     * @param  {String} obj.transactionBytes Bytes of transaction.
+     * @param  {String} obj.messageHex Hex to sign.
      * @param  {Number} obj.accountIndex Index of wallet to sign transaction for.
      * @return {(String|Boolean)}
      */
-    async signTransactionWithSchnorr ({ dispatch }, { transactionBytes, accountIndex } = {}) {
-      try {
-        return await dispatch('action', {
-          action: 'signTransactionWithSchnorr',
-          accountIndex,
-          data: transactionBytes
-        })
-      } catch (error) {
-        logger.error(error)
-        throw new Error(`Could not sign transaction: ${error}`)
-      }
-    },
-
-    /**
-     * Sign message for ledger wallet using ecdsa signatures.
-     * @param  {Object} obj
-     * @param  {Buffer} obj.messageBytes Bytes to sign.
-     * @param  {Number} obj.accountIndex Index of wallet to sign transaction for.
-     * @return {Promise<string>}
-     */
-    async signMessage ({ dispatch }, { messageBytes, accountIndex } = {}) {
+    async signMessage ({ dispatch }, { messageHex, accountIndex } = {}) {
       try {
         return await dispatch('action', {
           action: 'signMessage',
           accountIndex,
-          data: messageBytes
-        })
-      } catch (error) {
-        logger.error(error)
-        throw new Error(`Could not sign message: ${error}`)
-      }
-    },
-
-    /**
-     * Sign message for ledger wallet using schnorr signatures.
-     * @param  {Object} obj
-     * @param  {String} obj.messageBytes Bytes to sign.
-     * @param  {Number} obj.accountIndex Index of wallet to sign transaction for.
-     * @return {(String|Boolean)}
-     */
-    async signMessageWithSchnorr ({ dispatch }, { messageBytes, accountIndex } = {}) {
-      try {
-        return await dispatch('action', {
-          action: 'signMessageWithSchnorr',
-          accountIndex,
-          data: messageBytes
+          data: messageHex
         })
       } catch (error) {
         logger.error(error)
@@ -654,14 +614,8 @@ export default {
         async signTransaction () {
           return ledgerService.signTransaction(path, data)
         },
-        async signTransactionWithSchnorr () {
-          return ledgerService.signTransactionWithSchnorr(path, data)
-        },
         async signMessage () {
           return ledgerService.signMessage(path, data)
-        },
-        async signMessageWithSchnorr () {
-          return ledgerService.signMessageWithSchnorr(path, data)
         },
         async getVersion () {
           return ledgerService.getVersion()

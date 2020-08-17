@@ -24,7 +24,7 @@
           >
             <p
               place="APP"
-              class="font-black text-3xl"
+              class="font-bold text-3xl"
             >
               {{ $t('COMMON.APP_NAME_SHORT') }}
             </p>
@@ -65,12 +65,6 @@
           <p class="mb-5">
             {{ $t('INTRODUCTION.POWER.BANKS') }}
           </p>
-          <p class="mb-5">
-            {{ $t('INTRODUCTION.POWER.CRYPTO') }}
-          </p>
-          <p>
-            {{ $t('INTRODUCTION.POWER.RESPONSIBILITY') }}
-          </p>
         </div>
       </AppIntroScreen>
 
@@ -96,7 +90,7 @@
             <span
               v-t="'INTRODUCTION.DUTY.WARNING.CANNOT_RESTORE'"
               place="CANNOT_RESTORE"
-              class="underline"
+              class="mb-5"
             />
           </i18n>
           <p class="font-bold">
@@ -157,7 +151,7 @@
         @skip="done"
       >
         <div slot="content">
-          <div class="font-black text-3xl mb-5">
+          <div class="font-bold text-3xl mb-5">
             {{ $t('INTRODUCTION.TURN.TITLE') }}
           </div>
           <p class="mb-5">
@@ -226,6 +220,6 @@ export default {
 
 <style lang="postcss" scoped>
 .AppIntro__1 .AppIntroScreen__container__left {
-  background-color: #c9292c;
+  background-color: #471980;
 }
 </style>

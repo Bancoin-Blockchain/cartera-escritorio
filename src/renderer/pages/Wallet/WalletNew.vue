@@ -5,7 +5,7 @@
         class="WalletNew__instructions theme-dark bg-theme-feature text-theme-page-instructions-text hidden lg:flex flex-1 mr-4 rounded-lg overflow-y-auto"
       >
         <div class="m-auto w-3/5 text-center flex flex-col items-center justify-center">
-          <h1 class="text-inherit">
+          <h1 class="text-red">
             {{ $t(`PAGES.WALLET_NEW.STEP${step}.INSTRUCTIONS.HEADER`) }}
           </h1>
           <p
@@ -63,7 +63,7 @@
                 v-if="step === 1"
                 :is-refreshing="isRefreshing"
                 color-class="WalletNew__ButtonReload-colorClass"
-                text-class="hover:text-white"
+                text-class="hover:text-whitex"
                 view-box="0 0 14 12"
                 class="WalletNew__refresh-button WalletNew__refresh-button--address"
                 @click="refreshAddresses"
@@ -93,7 +93,7 @@
                       />
                       <span
                         v-if="isSelected(address)"
-                        class="WalletNew_wallets__check absolute rounded-full flex items-center justify-center -mb-1 w-6 h-6 bg-green border-4 border-theme-feature text-white"
+                        class="WalletNew_wallets__check absolute rounded-full flex items-center justify-center -mb-1 w-6 h-6 bg-green border-4 border-theme-feature text-red"
                       >
                         <SvgIcon
                           name="checkmark"
@@ -266,8 +266,8 @@
 </template>
 
 <script>
+import { flatten } from 'lodash'
 import { required } from 'vuelidate/lib/validators'
-import { flatten } from '@/utils'
 import { ButtonClipboard, ButtonReload } from '@/components/Button'
 import { InputPassword, InputSwitch, InputText } from '@/components/Input'
 import { MenuStep, MenuStepItem } from '@/components/Menu'
@@ -556,7 +556,7 @@ export default {
   @apply .text-grey-dark .bg-theme-button;
 }
 .WalletNew__ButtonReload-colorClass:hover {
-  @apply .bg-blue .text-white;
+  @apply .bg-blue .text-red;
   box-shadow: 0 5px 15px rgba(9, 100, 228, 0.34);
   transition: all .1s ease-in
 }

@@ -57,7 +57,7 @@ export default {
     textClass: {
       type: String,
       required: false,
-      default: 'text-grey-dark'
+      default: 'text-whitex'
     },
     withoutBackground: {
       type: Boolean,

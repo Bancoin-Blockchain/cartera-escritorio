@@ -43,7 +43,7 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   // Custom color variables
-  'default-background': '#f7fafb',
+  'default-background': '#8e32ff',
   'theme-page': 'var(--theme-page)',
   'theme-page-text': 'var(--theme-page-text)',
   'theme-page-text-light': 'var(--theme-page-text-light)',
@@ -122,7 +122,6 @@ let colors = {
   'theme-option-heading-button-text': 'var(--theme-option-heading-button-text)',
   'theme-input-field-border': 'var(--theme-input-field-border)',
   'theme-input-toggle-choice': 'var(--theme-input-toggle-choice)',
-  'theme-input-toggle-choice-hover': 'var(--theme-input-toggle-choice-hover)',
   'theme-input-toggle-choice-text': 'var(--theme-input-toggle-choice-text)',
   'theme-modal-footer-button': 'var(--theme-modal-footer-button)',
   'theme-modal-footer-button-text': 'var(--theme-modal-footer-button-text)',
@@ -158,12 +157,7 @@ let colors = {
   'theme-banner-background-color': 'var(--theme-banner-background-color)',
   'theme-banner-text': 'var(--theme-banner-text)',
 
-  'theme-footer-text': '#a4acb8',
-
-  'theme-tooltip-icon': 'var(--theme-tooltip-icon)',
-  'theme-tooltip-icon-hover': 'var(--theme-tooltip-icon-hover)',
-  'theme-tooltip-icon-text': 'var(--theme-tooltip-icon-text)',
-  'theme-tooltip-icon-hover-text': 'var(--theme-tooltip-icon-hover-text)',
+  'theme-footer-text': '#8e32ff',
 
   'transparent': 'transparent',
   'inherit': 'inherit',
@@ -177,14 +171,18 @@ let colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
+  'whitex': '#BDCCD4',
+  'purpurito': '#8800ff',
+  'purpurero': '#471980',
+  'whitex-light': '#A9B8BF',
 
-  'red-darkest': '#3b0d0c',
-  'red-darker': '#621b18',
-  'red-dark': '#cc1f1a',
-  'red': '#e51317', // ARK logo
-  'red-light': '#F03643', // Sidemenu hover and selected border
-  'red-lighter': '#f9acaa',
-  'red-lightest': '#fef4f5', // Sidemenu hover background
+  'red-darkest': '#220C3C',
+  'red-darker': '#3E196B',
+  'red-dark': '#6A1BCB',
+  'red': '#8e32ff', // Bancoin logo
+  'red-light': '#862EF1', // Sidemenu hover and selected border
+  'red-lighter': '#C9A1FA',
+  'red-lightest': '#F4ECFE', // Sidemenu hover background
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
@@ -218,13 +216,13 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#202126', // UPDATED
-  'blue-darker': '#282a38', // UPDATED
-  'blue-dark': '#2779bd',
-  'blue': '#037CFF', // UPDATED
-  'blue-light': '#6f77a4', // UPDATED
-  'blue-lighter': '#C0CDDF', // Sidemenu icons
-  'blue-lightest': '#edf4f5', // Background
+  'blue-darkest': '#232027', // UPDATED
+  'blue-darker': '#332B3D', // UPDATED
+  'blue-dark': '#6924BF',
+  'blue': '#BDCCD4', // UPDATED
+  'blue-light': '#8970A8', // UPDATED
+  'blue-lighter': '#C6B4DD', // Sidemenu icons
+  'blue-lightest': '#EAE2F4', // Background
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',
@@ -319,6 +317,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Arlon',
       'Proxima Nova',
       'system-ui',
       'BlinkMacSystemFont',
@@ -383,7 +382,7 @@ module.exports = {
     '2xl': '1.5rem', // 24px
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
-    '5xl': '3rem' // 48px
+    '5xl': '4.5rem' // 48px
   },
 
   /*

@@ -11,7 +11,7 @@
             'MenuTab__nav__item--clickable': !!item.onClick,
           }"
           :disabled="item.isDisabled"
-          class="MenuTab__nav__item text-inherit appearance-none cursor-pointer font-semibold px-5 py-4 flex justify-center items-center bg-theme-feature-item-alternative hover:bg-theme-feature-item-hover hover:text-theme-feature-item-selected-text"
+          class="MenuTab__nav__item text-red appearance-none cursor-pointer font-semibold px-5 py-4 flex justify-center items-center bg-theme-feature-item-alternative hover:bg-theme-feature-item-hover hover:text-theme-feature-item-selected-text"
           @click="item.onClick ? item.onClick() : switchToTab(item.tab)"
         >
           <template v-if="item.$slots.header">
@@ -101,11 +101,11 @@ export default {
 }
 
 .MenuTab__nav__item--active {
-  @apply .bg-theme-switch-button .text-theme-button-text;
+  @apply .bg-theme-switch-button .text-red;
 }
 
 .MenuTab__nav__item--clickable {
-  @apply .bg-theme-voting-banner-background .text-theme-page-text .opacity-75;
+  @apply .bg-theme-voting-banner-background .text-whitex .opacity-75;
 }
 
 .MenuTab__nav__item--disabled {

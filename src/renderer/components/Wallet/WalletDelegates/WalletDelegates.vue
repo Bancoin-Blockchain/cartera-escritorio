@@ -4,7 +4,7 @@
       v-if="!walletVote.username && isExplanationDisplayed"
       class="WalletDelegates__explanation relative rounded-lg mt-2 mb-6 bg-theme-explanation-background text-theme-explanation-text flex flex-row items-center justify-between"
     >
-      <div class="WalletDelegates__explanation__text flex text-left text-inherit py-4 pl-6">
+      <div class="WalletDelegates__explanation__text flex text-left text-red py-4 pl-6">
         <span>
           {{ $t('WALLET_DELEGATES.EXPLANATION', { delegates: activeDelegates }) }}
           <a

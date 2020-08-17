@@ -97,7 +97,7 @@
 </template>
 
 <script>
-import { isEqual } from 'lodash'
+import { isEqual, some } from 'lodash'
 import { ButtonLayout } from '@/components/Button'
 import { ContactRemovalConfirmation, ContactRenameModal } from '@/components/Contact'
 import { WalletGrid, WalletIdenticonPlaceholder } from '@/components/Wallet'
@@ -161,7 +161,7 @@ export default {
     },
 
     showVotedDelegates () {
-      return this.contacts.some(contact => Object.prototype.hasOwnProperty.call(contact, 'vote'))
+      return some(this.contacts, contact => Object.prototype.hasOwnProperty.call(contact, 'vote'))
     }
   },
 
@@ -237,17 +237,17 @@ export default {
 }
 .ContactAll__CreateButton {
   transition: all .1s ease-in;
-  @apply .flex .items-center .font-semibold .bg-theme-button .rounded .cursor-pointer .text-theme-button-text;
+  @apply .flex .items-center .font-semibold .bg-theme-button .rounded .cursor-pointer .text-whitex;
 }
 .ContactAll__CreateButton:hover {
-  @apply .bg-blue .text-white;
+  @apply .bg-purpurito .text-whitex;
 }
 .ContactAll__CreateButton__icon {
   transition: all .1s ease-in;
   @apply .flex .items-center .justify-center .h-10 .w-10 .rounded-l .bg-theme-button-inner-box;
 }
 .ContactAll__CreateButton:hover .ContactAll__CreateButton__icon {
-  background-color: #0169f4;
-  @apply .text-white;
+  background-color: #8800ff;
+  @apply .text-whitex;
 }
 </style>

@@ -46,7 +46,7 @@
       </TransitionGroup>
     </main>
 
-    <div class="Announcements--gradient-bottom sticky pin-b h-10" />
+    <div class="sticky pin-b h-10" />
   </div>
 </template>
 

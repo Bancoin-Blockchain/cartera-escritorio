@@ -6,7 +6,7 @@
         class="AppIntroScreen__container__left__logo"
       >
         <img
-          :src="assets_loadImage('ark-logo.png')"
+          :src="assets_loadImage('ark-logus.png')"
           class="h-full"
         >
       </div>
@@ -153,23 +153,23 @@ export default {
 }
 
 .AppIntroScreen__container__left {
-  background-color: #2d2f38;
+  background-color: #471980;
 }
 
 .AppIntroScreen__container__left__logo {
-  background-color: #c9292c;
+  background-color: #471980;
   @apply .absolute .flex .justify-center .h-18 .w-18 .px-3 .py-4 .rounded-tl-lg .rounded-br-lg
 }
 
 .AppIntroScreen__container__right__skip {
-  @apply .bg-transparent
+  @apply .bg-red
 }
 
 .AppIntroScreen--gradient-top {
   background: linear-gradient(
     to top,
     var(--theme-intro-gradient-1),
-    var(--theme-intro-gradient-2) 100%
+    rgba(255, 255, 255, 0) 100%
   );
   z-index: 1;
   @apply .sticky .pin-t .pin-x .h-6;
@@ -179,7 +179,7 @@ export default {
   background: linear-gradient(
     to bottom,
     var(--theme-intro-gradient-1),
-    var(--theme-intro-gradient-2) 100%
+    rgba(255, 255, 255, 0) 100%
   );
   z-index: 1;
   @apply .sticky .pin-b .pin-x .h-6;

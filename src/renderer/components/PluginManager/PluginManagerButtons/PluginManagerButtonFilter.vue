@@ -84,7 +84,7 @@ export default {
 
 <style lang="postcss" scoped>
 .PluginManagerButtonFilter {
-  @apply flex items-center relative rounded bg-theme-button text-theme-page-text h-8 pl-4 pr-3
+  @apply flex items-center relative rounded bg-theme-button text-whitex-light h-8 pl-4 pr-3
 }
 
 .PluginManagerButtonFilter__options {

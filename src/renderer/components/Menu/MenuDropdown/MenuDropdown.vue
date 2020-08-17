@@ -5,7 +5,7 @@
     <button
       v-if="!hasDefaultSlot"
       :disabled="isDisabled"
-      class="appearance-none text-inherit w-full"
+      class="appearance-none text-red w-full"
       @click.stop="handlerWrapperClick"
     >
       <slot
@@ -62,8 +62,7 @@
 </template>
 
 <script>
-import { zipObject } from 'lodash'
-import { isEmpty } from '@/utils'
+import { zipObject, isEmpty } from 'lodash'
 import MenuDropdownItem from './MenuDropdownItem'
 import MenuDropdownHandler from './MenuDropdownHandler'
 

@@ -11,7 +11,7 @@
 }
 
 .tooltip.success .tooltip-inner {
-  @apply .bg-green .text-white;
+  @apply .bg-green .text-red;
 }
 
 .tooltip.success .tooltip-arrow {
@@ -19,7 +19,7 @@
 }
 
 .tooltip.error .tooltip-inner {
-  @apply .bg-red-dark .text-white;
+  @apply .bg-red-dark .text-red;
 }
 
 .tooltip.error .tooltip-arrow {

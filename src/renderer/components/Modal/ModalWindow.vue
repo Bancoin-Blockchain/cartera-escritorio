@@ -16,7 +16,7 @@
               [containerClasses]: isMaximized,
               [containerClassesMinimized]: !isMaximized,
             }]"
-            class="ModalWindow__container flex flex-col mx-auto rounded-lg relative transition text-theme-text-content"
+            class="ModalWindow__container flex flex-col mx-auto rounded-lg relative transition text-whitex"
             @change="onChange"
             @mousedown.stop="void 0"
           >
@@ -47,7 +47,7 @@
                 :class="headerClasses"
               >
                 <slot name="header">
-                  <h2>{{ title }}</h2>
+                  <h2 class="text-whitex">{{ title }}</h2>
                 </slot>
               </header>
 
@@ -242,7 +242,7 @@ export default {
 }
 
 .ModalWindow--maximized .ModalWindow__container__content {
-  @apply overflow-y-auto p-16 pt-16 bg-theme-modal shadow rounded-lg;
+  @apply overflow-y-auto p-16 pt-16 bg-red-darker shadow rounded-lg;
 }
 .ModalWindow--minimized .ModalWindow__container__content {
   @apply overflow-y-auto px-8 pt-2 pb-5 bg-theme-modal shadow rounded-lg;
@@ -258,10 +258,10 @@ export default {
   @apply p-8 rounded-lg mt-2 text-sm shadow;
 }
 .ModalWindow__container__footer--warning {
-  @apply ModalWindow__container__footer bg-yellow-lighter text-grey-darkest;
+  @apply ModalWindow__container__footer bg-blue-lighter text-red-darkest;
 }
 .ModalWindow__container__footer--error {
-  @apply ModalWindow__container__footer bg-theme-error text-white;
+  @apply ModalWindow__container__footer bg-theme-error text-red;
 }
 .ModalWindow--minimized .ModalWindow__container__footer {
   @apply hidden;

@@ -99,7 +99,7 @@ export default {
       }
 
       if (includes(state.transactions[transaction.profileId], transaction)) {
-        throw new Error(`Cannot create transaction '${transaction.id}' - it already exists`)
+        throw new Error(`No se puede crear la transacción '${transaction.id}' - ya existe`)
       }
 
       state.transactions[transaction.profileId].push(transaction)
@@ -112,7 +112,7 @@ export default {
     },
     UPDATE (state, transaction) {
       if (!includes(state.transactions[transaction.profileId], transaction)) {
-        throw new Error(`Cannot update transaction '${transaction.id}' - it does not exist on the state`)
+        throw new Error(`No se puede actualizar la transacción '${transaction.id}' - no existe en el estado`)
       }
       state.transactions[transaction.profileId] = unionBy([transaction, ...state.transactions[transaction.profileId]], 'id')
     },

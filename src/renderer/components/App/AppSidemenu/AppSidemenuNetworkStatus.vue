@@ -37,7 +37,7 @@
             {{ $t('PEER.DISCONNECT') }}
           </span>
         </div>
-        <div class="bg-theme-settings-sub inline-block mx-6 rounded text-white relative px-3 py-2 inline-block select-none cursor-pointer">
+        <div class="bg-theme-settings-sub inline-block mx-6 rounded text-whitex relative px-3 py-2 inline-block select-none cursor-pointer">
           <button
             class="w-full text-left pr-12"
             @click.stop="toggleSelect('peers-menu')"
@@ -52,7 +52,7 @@
                 :value="currentPeerId"
                 :placeholder="peer ? `${peer.isHttps ? 'https://' : 'http://'}${peer.ip}` : $t('PEER.NONE')"
                 :pin-above="true"
-                class="inline-block text-white fill-white w-full"
+                class="inline-block text-red fill-white w-full"
                 @select="setPeer"
               />
             </div>
@@ -60,9 +60,9 @@
           <ButtonReload
             v-if="!peer.isCustom"
             :is-refreshing="isRefreshing"
-            text-class="hover:text-white"
+            text-class="hover:text-whitex"
             color-class="AppSidemenuNetworkStatus__ButtonReload-colorClass"
-            class="AppSidemenuNetworkStatus__refresh__button hover:text-white bg-theme-settings-button absolute text-grey-dark"
+            class="AppSidemenuNetworkStatus__refresh__button hover:text-whitex bg-theme-settings-button absolute text-grey-dark"
             @click="refreshPeer"
           />
           <button
@@ -86,7 +86,7 @@
             <div class="text-xs mb-2">
               {{ $t('PEER.HEIGHT') }}
             </div>
-            <div class="text-md text-white">
+            <div class="text-md text-whitex">
               {{ peer ? peer.height : '-' }}
             </div>
           </div>
@@ -94,7 +94,7 @@
             <div class="text-xs mb-2">
               {{ $t('PEER.LAST_CHECKED') }}
             </div>
-            <div class="text-md text-white">
+            <div class="text-md text-whitex">
               {{ formatter_date(peer.lastUpdated || lastUpdated, 'LT') }}
             </div>
           </div>
@@ -115,7 +115,7 @@
               />
             </div>
             <div v-else>
-              <span class="text-white">
+              <span class="text-red">
                 -
               </span>
             </div>
@@ -123,13 +123,13 @@
         </div>
       </MenuOptions>
       <div
-        class="bg-theme-settings mt-2 pt-1 px-10 rounded"
+        class="bg-theme-option-heading-button-hover mt-2 pt-1 px-10 rounded"
       >
         <ButtonModal
           :label="$t('PEER.CONNECT_CUSTOM')"
           icon="connect"
           view-box="0 0 30 15"
-          class="AppSidemenuNetworkStatus__ButtonModal cursor-pointer w-full text-left py-4 text-grey-dark hover:text-white border-b border-theme-settings-sub"
+          class="AppSidemenuNetworkStatus__ButtonModal cursor-pointer w-full text-left py-4 text-whitex hover:text-purple-darkest border-b border-theme-settings-heading"
           @toggle="toggleCustomPeerModal"
         >
           <template slot-scope="{ toggle, isOpen }">
@@ -147,7 +147,7 @@
         <RouterLink
           :to="{ name: 'networks' }"
           :class="isHorizontal ? 'flex-row w-22' : 'rounded-t-lg'"
-          class="flex items-center cursor-pointer w-full py-4 text-left text-grey-dark hover:no-underline hover:text-white"
+          class="flex items-center cursor-pointer w-full py-4 text-left text-whitex hover:no-underline hover:text-purple-darkest"
           @click.native="goToNetworkOverview()"
         >
           <SvgIcon
@@ -342,7 +342,7 @@ export default {
 .AppSidemenuNetworkStatus__status__height,
 .AppSidemenuNetworkStatus__status__last-checked,
 .AppSidemenuNetworkStatus__status__latency {
-  @apply .text-theme-settings-heading .border-theme-settings-border
+  @apply .text-theme-settings-heading .border-theme-action-button-text
 }
 
 .AppSidemenuNetworkStatus__refresh__button {
@@ -362,7 +362,7 @@ export default {
 }
 
 .AppSidemenuNetworkStatus__peer .MenuDropdownHandler.text-theme-page-text-light {
-  @apply .text-white;
+  @apply .text-red;
 }
 
 .AppSidemenuNetworkStatus__peer .MenuDropdownHandler span svg {
@@ -374,8 +374,8 @@ export default {
 }
 
 .AppSidemenuNetworkStatus__ButtonReload-colorClass:hover {
-  @apply .bg-blue;
-  box-shadow: 0 5px 15px rgba(9, 100, 228, 0.34);
+  @apply .bg-purpurero;
+  box-shadow: 0 5px 15px rgba(170, 9, 228, 0.34);
   transition: all .1s ease-in
 }
 </style>

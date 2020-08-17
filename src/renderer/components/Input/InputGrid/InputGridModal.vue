@@ -11,7 +11,7 @@
           :key="category"
           class="InputGridModal__container__category"
         >
-          <h4 class="w-full mt-5 mb-2">
+          <h4 class="w-full mt-5 mb-2 text-whitex">
             {{ category }}
           </h4>
 

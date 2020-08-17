@@ -69,8 +69,7 @@ import Cycled from 'cycled'
 import InputField from './InputField'
 import WalletService from '@/services/wallet'
 import truncate from '@/filters/truncate'
-import { orderBy, unionBy } from 'lodash'
-import { isEmpty } from '@/utils'
+import { includes, isEmpty, orderBy, unionBy } from 'lodash'
 
 export default {
   name: 'InputAddress',
@@ -216,7 +215,7 @@ export default {
         const value = wallet.name || wallet.address
         const searchValue = value.toLowerCase()
 
-        if (searchValue && searchValue.includes(this.inputValue.toLowerCase())) {
+        if (includes(searchValue, this.inputValue.toLowerCase())) {
           wallets[wallet.address] = value
         }
 

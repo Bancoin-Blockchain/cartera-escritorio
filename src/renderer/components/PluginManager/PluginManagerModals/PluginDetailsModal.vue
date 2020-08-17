@@ -14,7 +14,7 @@
       <div class="flex flex-col ml-5 justify-between">
         <div>
           <div class="flex items-center">
-            <span class="text-theme-page-text font-semibold text-xl">
+            <span class="text-whitex font-semibold text-xl">
               {{ plugin.title }}
             </span>
             <PluginManagerCheckmark v-if="plugin.isOfficial" />
@@ -337,7 +337,7 @@ export default {
   @apply .py-4;
 }
 .PluginDetailsModal__header__details {
-  @apply flex items-center mt-1 text-theme-page-text-light;
+  @apply flex items-center mt-1 text-whitex;
 }
 .PluginDetailsModal__header__actions {
   @apply flex items-center
@@ -350,10 +350,10 @@ export default {
   @apply border-t pt-4 mt-8 border-theme-line-separator
 }
 .PluginDetailsModal__description {
-  @apply mb-4 leading-tight
+  @apply mb-4 leading-tight text-whitex;
 }
 .PluginDetailsModal__keywords {
-  @apply mb-4
+  @apply mb-4 text-whitex
 }
 .PluginDetailsModal__stats > div {
   @apply flex flex-col border-r border-dashed border-theme-line-separator py-2
@@ -365,7 +365,7 @@ export default {
   @apply border-none
 }
 .PluginDetailsModal__stats > div span:first-child {
-  @apply text-theme-page-text-light mb-1
+  @apply text-whitex mb-1
 }
 
 .PluginDetailsModal__permission {

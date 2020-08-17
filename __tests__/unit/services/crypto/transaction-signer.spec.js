@@ -153,7 +153,7 @@ describe('Services > Client', () => {
         transaction,
         passphrase,
         secondPassphrase,
-        networkWif: 207,
+        networkWif: 171,
         networkId: 'bancoin.mainnet',
         nonce: '1'
       }

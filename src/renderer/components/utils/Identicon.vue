@@ -40,7 +40,7 @@
           v-if="showNetworkSymbol"
         >
           <circle
-            :style="{ fill: 'var(--theme-transaction-sent)' }"
+            fill="#f4f6f8"
             cx="70%"
             cy="78%"
             r="20%"

@@ -50,7 +50,7 @@
 
             <button
               v-if="profiles.length > 1"
-              class="ProfileAll__grid__profile__delete font-semibold flex text-xs cursor-pointer text-theme-page-text-light hover:underline hover:text-red"
+              class="ProfileAll__grid__profile__delete font-semibold flex text-xs cursor-pointer text-theme-page-text-light hover:underline hover:text-whitex"
               @click="openRemovalConfirmation(profile)"
             >
               {{ $t('PAGES.PROFILE_ALL.REMOVE_PROFILE') }}

@@ -26,6 +26,6 @@ export default {
 
 <style lang="postcss" scoped>
 .SearchFilterItem {
-  @apply .px-5 .border-l .border-theme-settings-border
+  @apply .px-5 .border-l .border-theme-transaction-detail-gradient2
 }
 </style>

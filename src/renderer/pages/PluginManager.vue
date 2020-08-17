@@ -316,14 +316,14 @@ export default {
     colors () {
       const themeColors = {
         dark: {
-          background: '#585d6d',
-          title: '#f7f9fb',
-          subtitle: '#787fa3'
+          background: '#8e32ff',
+          title: '#ffffff',
+          subtitle: '#ffffff'
         },
         light: {
-          background: '#e7f9fd',
-          title: '#1d6ddb',
-          subtitle: '#2b3748'
+          background: '#bb84ff',
+          title: '#ffffff',
+          subtitle: '#ffffff'
         }
       }
 

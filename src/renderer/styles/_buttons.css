@@ -4,12 +4,12 @@
 
 button:disabled {
   cursor: default;
-  color: #838a9b;
+  color: #BDCCD4;
   pointer-events: none;
 }
 
 .hover-button-blue-shadow-definition {
-  box-shadow: 0 5px 15px rgba(9, 100, 228, 0.34);
+  box-shadow: 0 5px 15px rgba(142, 50, 255, 0.34);
 }
 
 .hover-button-green-shadow-definition {
@@ -25,15 +25,15 @@ button:disabled {
 }
 
 .blue-button {
-	@apply default-button .bg-theme-button .text-theme-button-text
+	@apply default-button .bg-theme-button .text-whitex-light
 }
 
 .blue-small-button {
-  @apply small-button .bg-theme-button .text-theme-button-text
+  @apply small-button .bg-theme-button .text-whitex
 }
 
 .blue-button:enabled:hover, .blue-small-button:enabled:hover {
-	@apply .bg-blue .text-white .hover-button-blue-shadow-definition
+	@apply .bg-purpurito .text-whitex .hover-button-blue-shadow-definition
 }
 
 .green-button {
@@ -41,15 +41,15 @@ button:disabled {
 }
 
 .green-button:enabled:hover {
-	@apply .bg-green .text-white .hover-button-green-shadow-definition
+	@apply .bg-green .text-red .hover-button-green-shadow-definition
 }
 
 .action-button {
-	@apply default-button .bg-theme-action-button .text-theme-action-button-text .py-2 .px-4
+	@apply default-button .bg-theme-voting-banner-background .text-theme-action-button-text .py-2 .px-4
 }
 
 .action-button:enabled:hover {
-	@apply .bg-theme-button .text-theme-action-button-text-hover
+  @apply .bg-theme-settings-button .text-whitex-light
 }
 
 .option-heading-button {
@@ -57,7 +57,7 @@ button:disabled {
 }
 
 .option-heading-button:enabled:hover {
-	@apply .bg-theme-option-heading-button-hover .text-white
+	@apply .bg-theme-option-heading-button-hover .text-whitex
 }
 
 .option-button {
@@ -65,7 +65,7 @@ button:disabled {
 }
 
 .option-button:enabled:hover {
-	@apply .bg-theme-option-button-hover .text-white
+	@apply .bg-theme-option-button-hover .text-red
 }
 
 .svg-button {
@@ -77,7 +77,7 @@ button:disabled {
 }
 
 .svg-button--selected {
-  @apply .bg-green .border-green .text-white !important;
+  @apply .bg-green .border-green .text-red !important;
 }
 
 .svg-button--selected:hover {
@@ -91,5 +91,5 @@ button:disabled {
 }
 
 .pager-button:enabled:hover {
-  @apply .bg-blue .text-white .hover-button-blue-shadow-definition .cursor-pointer;
+  @apply .bg-blue .text-red .hover-button-blue-shadow-definition .cursor-pointer;
 }

@@ -1,22 +1,17 @@
 <template>
-  <div class="SplashScreen bg-default-background absolute h-full w-full flex flex-col text-center select-none">
+  <div class="SplashScreen bg-default-background absolute h-full w-full flex flex-col text-center font-sans select-none">
     <div class="flex flex-1 justify-center">
       <div class="flex rounded-lg mb-3 p-5 bg-red m-auto">
         <img
-          src="@/assets/images/ark-logo.png"
-          class="h-12"
+          src="@/assets/images/bancoin-logo.png"
+          class="h-64"
         >
       </div>
     </div>
 
     <div class="flex-inline">
-      <div class="text-4xl mb-4">
-        <span class="font-semibold">{{ $t('COMMON.ARK') }}</span>
-        {{ $t('COMMON.DESKTOP_WALLET') }}
-      </div>
-
       <div class="text-sm mb-2">
-        {{ loadingMessage }}
+        {{ $t('COMMON.INITIALIZING') }}
       </div>
     </div>
 
@@ -34,14 +29,14 @@
         xml:space="preserve"
       >
         <path
-          fill="#e5f0f8"
+          fill="#a75afe"
           d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
           s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
           c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"
         />
 
         <path
-          fill="#007dff"
+          fill="#b87fff"
           d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
           C22.32,8.481,24.301,9.057,26.013,10.047z"
         >
@@ -74,13 +69,6 @@ export default {
   computed: {
     version () {
       return packageJson.version
-    },
-    loadingMessage () {
-      if (window.navigator.onLine) {
-        return this.$t('COMMON.INITIALIZING')
-      }
-
-      return this.$t('COMMON.NO_INTERNET_CONNECTION')
     }
   }
 }
@@ -88,6 +76,6 @@ export default {
 
 <style scoped>
 .SplashScreen {
-  color: #3c4249;
+  color: #ffffff;
 }
 </style>

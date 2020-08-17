@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import { concat } from 'lodash'
 import { PLUGINS } from '@config'
 import { PluginManagerButtonMenu } from '@/components/PluginManager/PluginManagerButtons'
 
@@ -59,7 +60,7 @@ export default {
 
   computed: {
     pluginCategories () {
-      return ['all'].concat(PLUGINS.categories.filter(category => !['theme', 'language'].includes(category)))
+      return concat(['all'], PLUGINS.categories.filter(category => !['theme', 'language'].includes(category)))
     },
 
     otherCategories () {
@@ -106,6 +107,6 @@ export default {
 .PluginManagerSideMenu__categories li.active,
 .PluginManagerSideMenu__other-categories li:hover,
 .PluginManagerSideMenu__other-categories li.active {
-  @apply .bg-theme-secondary-feature .text-theme-page-text .border-blue;
+  @apply .bg-theme-feature-item-indicator .text-whitex .border-blue;
 }
 </style>

@@ -1,13 +1,12 @@
 import BaseModule from '../base'
-import { cloneDeep } from 'lodash'
+import { cloneDeep, isEmpty } from 'lodash'
 import { Managers } from '@arkecosystem/crypto'
 import { NETWORKS } from '@config'
-import { isEmpty } from '@/utils'
 import eventBus from '@/plugins/event-bus'
 import NetworkModel from '@/models/network'
 import Client from '@/services/client'
+import got from 'got'
 import Vue from 'vue'
-import { reqwest } from '@/utils/http'
 
 export default new BaseModule(NetworkModel, {
 
@@ -100,7 +99,7 @@ export default new BaseModule(NetworkModel, {
 
         if (network.knownWalletsUrl) {
           try {
-            const knownWallets = await reqwest(network.knownWalletsUrl, {
+            const knownWallets = await got(network.knownWalletsUrl, {
               json: true
             })
             network.knownWallets = knownWallets.body

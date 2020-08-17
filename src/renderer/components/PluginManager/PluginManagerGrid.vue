@@ -115,7 +115,7 @@ export default {
   @apply pb-0 border-none;
 }
 .PluginManagerGrid__plugin__name {
-  @apply text-theme-page-text font-semibold text-lg cursor-pointer;
+  @apply text-red font-semibold text-lg cursor-pointer;
 }
 .PluginManagerGrid__plugin__details {
   @apply flex items-center mt-1 text-theme-page-text-light;

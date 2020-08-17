@@ -3,10 +3,10 @@ export default {
     ADAPTER: 'Adapter',
     ADDRESS: 'Address',
     ALL: 'All',
-    APP_NAME: 'ARK Desktop Wallet',
-    APP_NAME_SHORT: 'ARK Desktop',
+    APP_NAME: 'BANCOIN Desktop Wallet',
+    APP_NAME_SHORT: 'BANCOIN Desktop',
     APPEARANCE: 'Appearance',
-    ARK: 'ARK',
+    ARK: 'BANCOIN',
     AVATAR: 'Avatar',
     BACK: 'Back',
     BACKGROUND: 'Background',
@@ -25,13 +25,8 @@ export default {
     FILTER_BLACKLISTED_PLUGINS: 'Apply blacklist',
     FINISH: 'Finish',
     HIDE_WALLET_BUTTON_TEXT: 'Hide text from wallet buttons',
-    IS_MARKET_CHART_ENABLED: 'Price chart on the dashboard',
+    IS_MBANCOINET_CHART_ENABLED: 'Price chart on the dashboard',
     INITIALIZING: 'Initializing...',
-    NO_INTERNET_CONNECTION: 'Initialization is taking longer than expected. Please check your internet connectivity.',
-    INTERNET_STATUS: {
-      NO_INTERNET_CONNECTION: 'No internet connection. Please check your internet connectivity!',
-      WITH_INTERNET_CONNECTION: 'Internet connectivity established!'
-    },
     LANGUAGE: 'Application Language',
     LEDGER: 'Ledger',
     LEDGER_WALLET: 'This is a Ledger wallet',
@@ -92,29 +87,29 @@ export default {
       OWNER: 'This also brings greater responsibility for you, the account owner.',
       WARNING: {
         ACCOUNT: 'Unlike your traditional bank account, {CANNOT_RESTORE}.',
-        CANNOT_RESTORE: 'lost passwords, passphrases or stolen funds cannot be restored by the delegates, ARK.io team, or anyone else'
+        CANNOT_RESTORE: 'lost passwords, passphrases or stolen funds cannot be restored by the delegates, BANCOIN.io team, or anyone else'
       },
       SECURITY: 'The security of your account is solely up to you.'
     },
     RESPONSIBILITY: {
       TITLE: 'Your Responsibility',
       STORAGE: {
-        EXPLANATION: 'The {PASSPHRASE} of each wallet address is able to sign transactions and move funds. This means if your computer dies but you have your passphrase, you can still access your funds. The ARK Desktop Wallet has an additional feature that lets you set an {ENCRYPTED} as well, for easier management. If your computer dies, you cannot use the encrypted password to access your funds from a different machine. {NEED}.',
+        EXPLANATION: 'The {PASSPHRASE} of each wallet address is able to sign transactions and move funds. This means if your computer dies but you have your passphrase, you can still access your funds. The BANCOIN Desktop Wallet has an additional feature that lets you set an {ENCRYPTED} as well, for easier management. If your computer dies, you cannot use the encrypted password to access your funds from a different machine. {NEED}.',
         PASSPHRASE: 'passphrase',
         ENCRYPTED: 'encrypted password',
         NEED: 'You will need the passphrase'
       },
       BACKUP: {
         ALWAYS: 'Always backup your passphrase and keep it in a safe place.',
-        OPTIONS: 'You can write it down on thick paper and store multiple copies in secure locations. You can also store it on an encrypted flash drive. Alternatively, you can use a Ledger Nano S USB hardware device, available at Ledger.com, to store and access your funds and the ARK Desktop Wallet. You can plug your Ledger Nano S into your computer and access the ARK blockchain without needing to enter your passphrase.'
+        OPTIONS: 'You can write it down on thick paper and store multiple copies in secure locations. You can also store it on an encrypted flash drive. Alternatively, you can use a Ledger Nano S USB hardware device, available at Ledger.com, to store and access your funds and the BANCOIN Desktop Wallet. You can plug your Ledger Nano S into your computer and access the BANCOIN blockchain without needing to enter your passphrase.'
       },
       REMEMBER: 'Remember, anyone who has your passphrase can access your funds. Never share your account with anyone and avoid storing it in locations that are susceptible to hacks, such as the Cloud.'
     },
     TURN: {
       TITLE: 'Your Turn',
-      KNOWLEDGE: 'Now, armed with the knowledge of how important it is to keep your passphrases safe, you are ready to claim your financial autonomy with the ARK Desktop Wallet.',
-      SUPPORT: 'ARK is an open-source ecosystem and if you need assistance, the ARK community and team is here to help. Create a post on reddit.ark.io, or join the real-time chat system at slack.ark.io.',
-      CONCLUSION: 'Everyone here on the ARK.io team hopes you enjoy using the ARK Desktop Wallet to participate in the blockchain revolution!'
+      KNOWLEDGE: 'Now, armed with the knowledge of how important it is to keep your passphrases safe, you are ready to claim your financial autonomy with the BANCOIN Desktop Wallet.',
+      SUPPORT: 'BANCOIN is an open-source ecosystem and if you need assistance, the BANCOIN community and team is here to help. Create a post on reddit.bancoin.io, or join the real-time chat system at slack.bancoin.io.',
+      CONCLUSION: 'Everyone here on the BANCOIN.io team hopes you enjoy using the BANCOIN Desktop Wallet to participate in the blockchain revolution!'
     }
   },
 
@@ -140,7 +135,7 @@ export default {
   },
 
   LEDGER: {
-    NEEDS_UPDATE: 'Ledger update available! Please update the ARK app via Ledger Live to send transactions on this network'
+    NEEDS_UPDATE: 'Ledger update available! Please update the BANCOIN app via Ledger Live to send transactions on this network'
   },
 
   PEER: {
@@ -187,8 +182,6 @@ export default {
     },
     PASSWORD: {
       TOO_SHORT: 'Your password must be at least {0} characters long',
-      LOWER_CASE: 'Your password must contain at least 1 lowercase character',
-      UPPER_CASE: 'Your password must contain at least 1 uppercase character',
       NUMBERS: 'Your password must contain at least 1 number',
       SPECIAL_CHARACTERS: 'Your password must contain at least 1 special character',
       NO_MATCH: 'Your passwords do not match'
@@ -218,6 +211,7 @@ export default {
   },
 
   LANGUAGES: {
+    'es-ES': 'Español',
     'en-US': 'English'
   },
 
@@ -263,7 +257,7 @@ export default {
   },
 
   APP_FOOTER: {
-    TEXT: 'Made with ♥ by ARK'
+    TEXT: 'Made with ♥ by BANCOIN'
   },
 
   APP_SIDEMENU: {
@@ -674,7 +668,7 @@ export default {
       REMOVING: 'Removing \'{plugin}\'',
       UPDATING: 'Updating \'{plugin}\'',
       OFFICIAL: 'Official {author} plugin',
-      GRANTS: 'Funded by ARK Grants',
+      GRANTS: 'Funded by BANCOIN Grants',
       MENU: 'Menu',
       BANNER: {
         TITLE: 'Welcome to the Plugin Manager',
@@ -716,7 +710,7 @@ export default {
         BLACKLIST: 'The plugin \'{plugin}\' was added to the blacklist',
         RELOAD: 'The plugin repository was reloaded successfully'
       },
-      DISCLAIMER: '<b>Disclaimer:</b> The availability of this plugin in the ARK Desktop Wallet does not mean that either ARK.io or ARK SCIC is directly involved in the development or affiliated with the developer providing this plugin. By installing it on your wallet, you assume every responsibility.',
+      DISCLAIMER: '<b>Disclaimer:</b> The availability of this plugin in the BANCOIN Desktop Wallet does not mean that either BANCOIN.io or BANCOIN SCIC is directly involved in the development or affiliated with the developer providing this plugin. By installing it on your wallet, you assume every responsibility.',
       REPORT: 'Report this plugin',
       BLACKLISTED: 'This plugin is already blacklisted',
       VERSION_MISMATCH: 'This plugin is not compatible with your wallet version'
@@ -791,7 +785,7 @@ export default {
       ADVANCED_MODE: {
         DECLINE: 'I Decline',
         ACCEPT: 'I Accept',
-        QUESTION: 'By enabling Advanced Mode you hereby assume the risk associated with downloading files and installing said files from a direct URL link. The aforementioned links have neither been tested nor approved by ARK.io and ARK SCIC. We make no warranties, expressed or implied, as to the sustainability, availability, security, of these URLs. We are not responsible for any consequences which may occur from downloading, viewing, or installing files directly from a URL or feature that is activated via toggling on Advanced Mode. ARK.io and ARK SCIC shall bear no liability for any loss suffered by users who bypass certain measures by toggling on Advanced Mode. By clicking “I Accept” you acknowledge that enabling Advanced Mode may result in you downloading, viewing, or installing content that may have bugs, glitches, lack of functionality, or can cause damage to your machine or result in the loss of data.',
+        QUESTION: 'By enabling Advanced Mode you hereby assume the risk associated with downloading files and installing said files from a direct URL link. The aforementioned links have neither been tested nor approved by BANCOIN.io and BANCOIN SCIC. We make no warranties, expressed or implied, as to the sustainability, availability, security, of these URLs. We are not responsible for any consequences which may occur from downloading, viewing, or installing files directly from a URL or feature that is activated via toggling on Advanced Mode. BANCOIN.io and BANCOIN SCIC shall bear no liability for any loss suffered by users who bypass certain measures by toggling on Advanced Mode. By clicking “I Accept” you acknowledge that enabling Advanced Mode may result in you downloading, viewing, or installing content that may have bugs, glitches, lack of functionality, or can cause damage to your machine or result in the loss of data.',
         TITLE: 'Advanced Mode Disclaimer'
       }
     },
@@ -810,7 +804,7 @@ export default {
 
     WALLET_EXCHANGE: {
       CHANGELLY_TERMS: {
-        TITLE: 'Purchase {ticker} directly within ARK Desktop Wallet with our Changelly integration',
+        TITLE: 'Purchase {ticker} directly within BANCOIN Desktop Wallet with our Changelly integration',
         CONTENT: 'Changelly lets you exchange other cryptocurrencies into {ticker} and has an option to buy {ticker} directly with your credit or debit cards.',
         CONFIRMATION: 'I have read and I agree with the {terms} and the {privacy} from Changelly. By clicking {button}, I acknowledge and understand that my transaction may trigger AML/KYC verification according to Changelly {kyc}.',
         TERMS_OF_USE: 'terms of use',
@@ -1034,7 +1028,6 @@ export default {
       BRIDGECHAIN_UPDATE: 'Bridgechain update was unsuccessful',
       SAVE_OFFLINE: 'Failed to save transaction file: {error}',
       LOAD_FROM_FILE: 'Failed to load transaction file',
-      LOAD_FROM_URI: 'Failed to load transaction URI',
       EXPIRED: 'Transaction expired before it was processed: {transactionId}',
       FEE_TOO_LOW: 'Transaction could not be sent because the fee ({fee}) is too low',
       NOT_ENOUGH_BALANCE: 'The total amount of the recipients + fee is greater than the balance ({balance}) of the wallet',
@@ -1082,8 +1075,7 @@ export default {
     },
     MULTI_PAYMENT: {
       TOTAL_AMOUNT: 'Total amount',
-      WARNING_DUPLICATE: 'The address is already a recipient',
-      TOOLTIP: 'A multiple recipient transaction allows up to {0} recipients in one transaction'
+      WARNING_DUPLICATE: 'The address is already a recipient'
     },
     MULTI_SIGNATURE: {
       ADDRESS: 'Multisignature Address',
@@ -1126,7 +1118,6 @@ export default {
     BRIDGECHAIN_NAME: 'Bridgechain Name',
     BUSINESS_NAME: 'Business Name',
     BUTTON_ADD: 'Add',
-    BUTTON_ADD_RECIPIENT: 'Add Recipient #{number}',
     CONFIRMATION_COUNT: '{confirmations} Confirmations',
     CONFIRM_SEND_ALL: 'This will enable sending all of your tokens from the current wallet in this transaction. The selected transfer fee will be deducted from the send amount.',
     CONFIRM_SEND_ALL_TITLE: 'Send all your tokens?',
@@ -1143,16 +1134,14 @@ export default {
     LEDGER_SIGN_FAILED: 'Could not sign transaction with Ledger',
     LEDGER_USER_DECLINED: 'User declined',
     LOAD_FROM_FILE: 'Load transaction from file',
-    LOAD_FROM_URI: 'Load transaction from URI',
     MULTIPLE: 'Multiple',
     NONCE: 'Nonce',
-    NO_RECIPIENTS: 'There are no recipients',
+    NO_RECIPIENTS: 'There are no recipient(s)',
     OPEN_IN_EXPLORER: 'Open in Explorer',
     PASSPHRASE: 'Passphrase',
     PASSWORD: 'Encryption Password',
     RECIPIENT: 'Recipient',
     RECIPIENTS: 'Recipients',
-    RECIPIENTS_TITLE_MINIMUM: 'Recipients (minimum 2)',
     RESEND: 'Resend',
     RESENT_NOTICE: 'Transaction {transactionId} has been resent',
     SAVE_OFFLINE: 'Save transaction offline',
@@ -1314,7 +1303,7 @@ export default {
     ALREADY_REGISTERED: 'This wallet is already registered as a delegate',
     NOT_REGISTERED: 'This wallet is not registered as a delegate',
     BLOG: 'Voting Guide',
-    EXPLANATION: 'Voting is an optional, but important mechanism that keeps the ARK network secure. The {delegates} delegates with the most votes from the network are responsible for verifying and forging transactions into new blocks. This page can be used to cast your vote for a delegate that you support. Learn more about voting for a delegate by clicking on the following link:',
+    EXPLANATION: 'Voting is an optional, but important mechanism that keeps the BANCOIN network secure. The {delegates} delegates with the most votes from the network are responsible for verifying and forging transactions into new blocks. This page can be used to cast your vote for a delegate that you support. Learn more about voting for a delegate by clicking on the following link:',
     VOTE_DELEGATE: 'Vote Delegate {delegate}',
     UNVOTE_DELEGATE: 'Unvote Delegate {delegate}',
     CURRENTLY_VOTED: 'You are currently voting for {delegate}',
@@ -1422,7 +1411,7 @@ export default {
 
   BLACKLIST_DISCLAIMER_CONFIRMATION: {
     QUESTION: 'Are you sure you want to disable the blacklist?',
-    NOTE: 'Warning: By turning off filtering, you will be viewing third-party plugins that have not been tested and approved by ARK.io and ARK SCIC. We make no warranties, expressed or implied, as to the sustainability, availability, security, of the third-party plugin. We are not responsible for any of the content presented as a result of viewing, installing, or running any of these third-party plugins. ARK.io and ARK SCIC shall bear no liability for any loss suffered by using third-party plugins. By clicking "I Accept" you acknowledge that unverified third-party plugins may have bugs, glitches, lack of functionality, or can cause damage to your machine or result in the loss of data.',
+    NOTE: 'Warning: By turning off filtering, you will be viewing third-party plugins that have not been tested and approved by BANCOIN.io and BANCOIN SCIC. We make no warranties, expressed or implied, as to the sustainability, availability, security, of the third-party plugin. We are not responsible for any of the content presented as a result of viewing, installing, or running any of these third-party plugins. BANCOIN.io and BANCOIN SCIC shall bear no liability for any loss suffered by using third-party plugins. By clicking "I Accept" you acknowledge that unverified third-party plugins may have bugs, glitches, lack of functionality, or can cause damage to your machine or result in the loss of data.',
     ACCEPT: 'I Accept',
     CANCEL: 'Cancel'
   },

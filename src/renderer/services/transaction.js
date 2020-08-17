@@ -15,13 +15,13 @@ export default class TransactionService {
   /*
    * Get bytes for transaction.
    * @param {Object} transaction
-   * @return {Buffer}
+   * @return {String}
    */
   static getBytes (transaction) {
     return Transactions.Serializer.getBytes(transaction, {
       excludeSignature: true,
       excludeSecondSignature: true
-    })
+    }).toString('hex')
   }
 
   /**
@@ -96,13 +96,9 @@ export default class TransactionService {
       transaction.recipientId = wallet.address
     }
 
-    const operation = transaction.version >= 2
-      ? 'ledger/signTransactionWithSchnorr'
-      : 'ledger/signTransaction'
-
     const transactionBytes = this.getBytes(transaction)
-    transaction.signature = await vm.$store.dispatch(operation, {
-      transactionBytes: transactionBytes,
+    transaction.signature = await vm.$store.dispatch('ledger/signTransaction', {
+      transactionHex: transactionBytes.toString('hex'),
       accountIndex: wallet.ledgerIndex
     })
 
@@ -153,12 +149,12 @@ export default class TransactionService {
   /*
    * Sign message with Ledger.
    * @param {Object} wallet
-   * @param {string} message
+   * @param {String} message
    * @return {Object}
    */
   static async ledgerSignMessage (wallet, message, vm) {
     const signature = await vm.$store.dispatch('ledger/signMessage', {
-      messageBytes: Buffer.from(message, 'utf-8'),
+      messageHex: Buffer.from(message).toString('hex'),
       accountIndex: wallet.ledgerIndex
     })
 

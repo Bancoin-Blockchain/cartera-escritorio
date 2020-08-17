@@ -5,7 +5,7 @@
         class="ProfileNew__instructions theme-dark bg-theme-feature text-theme-page-instructions-text hidden lg:flex flex-1 mr-4 rounded-lg overflow-y-auto"
       >
         <div class="m-auto w-3/5 text-center flex flex-col items-center justify-center">
-          <h1 class="text-inherit">
+          <h1 class="text-red">
             {{ $t(`PAGES.PROFILE_EDITION.TAB_${tab.toUpperCase()}.INSTRUCTIONS.HEADER`) }}
           </h1>
           <p class="text-center py-2 leading-normal">
@@ -369,9 +369,8 @@
 </template>
 
 <script>
-import { clone } from 'lodash'
+import { clone, isEmpty } from 'lodash'
 import { BIP39, I18N, MARKET, PLUGINS } from '@config'
-import { isEmpty } from '@/utils'
 import { ButtonSwitch } from '@/components/Button'
 import { InputText } from '@/components/Input'
 import { ListDivided, ListDividedItem } from '@/components/ListDivided'

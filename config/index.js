@@ -24,14 +24,15 @@ exports.VENDOR_FIELD = {
 }
 
 exports.I18N = {
-  defaultLocale: 'en-US',
+  defaultLocale: 'es-ES',
   enabledLocales: [
+    'es-ES',
     'en-US'
   ]
 }
 
 exports.BIP39 = {
-  defaultLanguage: 'english',
+  defaultLanguage: 'spanish',
   languages: [
     'chinese_simplified',
     'chinese_traditional',

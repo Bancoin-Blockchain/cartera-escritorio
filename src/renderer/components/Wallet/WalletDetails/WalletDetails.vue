@@ -58,7 +58,7 @@
         {{ $t('WALLET_DELEGATES.SEARCH_DELEGATE') }}
       </div>
       <div
-        class="mt-4 mb-4 py-4 px-6 text-theme-voting-banner-text bg-theme-voting-banner-background w-full flex"
+        class="mt-4 mb-4 py-4 px-6 text-whitex bg-theme-voting-banner-background w-full flex"
         :class="{ 'rounded-r': isOwned && !votedDelegate }"
       >
         <div

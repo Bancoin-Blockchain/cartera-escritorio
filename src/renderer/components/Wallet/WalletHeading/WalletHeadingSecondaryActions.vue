@@ -7,7 +7,7 @@
       v-if="registrationTypes.length"
       :classes="buttonStyle"
       :items="registrationTypes"
-      title="Registration"
+      title="Registro"
     >
       <ButtonModal
         slot="button"
