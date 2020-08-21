@@ -172,6 +172,7 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
   'whitex': '#BDCCD4',
+  'whitex-dark': '#0f011b',
   'purpurito': '#8800ff',
   'purpurero': '#471980',
   'whitex-light': '#A9B8BF',
@@ -180,6 +181,7 @@ let colors = {
   'red-darker': '#3E196B',
   'red-dark': '#6A1BCB',
   'red': '#8e32ff', // Bancoin logo
+  'redsito': '#ff0000', // Latencia negativa
   'red-light': '#862EF1', // Sidemenu hover and selected border
   'red-lighter': '#C9A1FA',
   'red-lightest': '#F4ECFE', // Sidemenu hover background

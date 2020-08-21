@@ -104,13 +104,13 @@
             </div>
             <div
               v-if="peer.latency"
-              :class="peer && peer.latency < 500 ? 'text-green' : 'text-red'"
+              :class="peer && peer.latency < 500 ? 'text-green' : 'text-redsito'"
             >
               <span class="text-md">
                 {{ peer.latency }} ms
               </span>
               <div
-                :class="peer && peer.latency < 500 ? 'bg-green' : 'bg-red'"
+                :class="peer && peer.latency < 500 ? 'bg-green' : 'bg-redsito'"
                 class="inline-block h-2 w-2 ml-1 rounded-full"
               />
             </div>

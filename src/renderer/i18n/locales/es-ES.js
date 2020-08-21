@@ -169,7 +169,7 @@ export default {
     MAX_LENGTH: 'Max {0}',
     MIN_LENGTH: 'Min {0}',
     MUST_BE_GREATER_THAN: 'Debe ser mayor a {0}',
-    NOT_MATCH: 'El \'{0}\' no concide con \'{1}\'',
+    NOT_MATCH: 'La \'{0}\' no concide con \'{1}\'',
     NOT_VALID: 'El \'{0}\' no es valido',
     NOT_NUMERIC: 'El \'{0}\' no es numerico',
     NO_SCHEME: 'El \'{0}\' no tiene \'http://\' o \'https://\'',
@@ -1421,7 +1421,7 @@ export default {
     RECIPIENT: 'Receptor',
     SENDER: 'Emisor',
     AMOUNT: 'Monto',
-    NEW_TRANSACTIONS: '0 | Esta cartera tiene 1 nueva transacción. Presiona el botón Actualizar para actualizar. El | Esta cartera tiene {count} nuevas transacciones. Presiona el botón Actualizar para actualizar.'
+    NEW_TRANSACTIONS: '0 | Esta cartera tiene 1 nueva transacción. Presiona el botón Actualizar para refrescar. | Esta cartera tiene {count} nuevas transacciones. Presiona el botón Actualizar para refrescar.'
   },
 
   WALLET_TABLE: {

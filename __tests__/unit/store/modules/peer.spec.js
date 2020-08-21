@@ -10,7 +10,7 @@ import { profile1 } from '../../__fixtures__/store/profile'
 Vue.use(Vuex)
 Vue.use(apiClient)
 
-const nethash = '2a44f340d76ffc3df204c5f38cd355b7496c9065a1ade2ef92071436bd72e867'
+const nethash = 'bdc5bca0e59a33c94c1f1318f22cc481ff09433ba7ec395eba3eaa25a57499e7'
 
 const stripPorts = (peers) => {
   const single = !Array.isArray(peers)

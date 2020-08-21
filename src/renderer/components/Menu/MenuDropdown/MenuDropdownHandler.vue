@@ -2,7 +2,7 @@
   <button
     :class="[
       value ? '' : 'text-theme-page-text-light hover:text-theme-page-text',
-      'MenuDropdownHandler cursor-pointer transition flex justify-between items-center text-whitex']"
+      'MenuDropdownHandler cursor-pointer transition flex justify-between items-center text-whitex-dark']"
     @blur="emitBlur"
     @click="emitClick"
   >

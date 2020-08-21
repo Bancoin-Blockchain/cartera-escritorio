@@ -451,7 +451,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-left: 0.3rem;
   margin-right: 0.2rem;
   transition: opacity 0.3s;
-  @apply .text-theme-page-text-light
+  @apply .text-theme-button-text
 }
 .InputFee__choice:hover {
   opacity: 0.5;

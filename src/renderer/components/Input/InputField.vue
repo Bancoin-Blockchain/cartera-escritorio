@@ -109,7 +109,7 @@ export default {
 
 .InputField--invalid .InputField__label,
 .InputField--invalid .InputField__helper {
-  @apply .text-red-dark
+  @apply .text-red
 }
 .InputField--invalid .InputField__input {
   @apply .border-red-dark

@@ -47,20 +47,20 @@
   ],
   "constants": {
     "activeDelegates": 51,
-    "epoch": "2020-08-16T22:00:28.086Z"
+    "epoch": "2020-08-21T00:47:11.099Z"
   },
   "vendorField": {
     "maxLength": 255
   },
-  "nethash": "6aceeb026c1cbd57c7d22f63ebf5fa034e049258b9bf87985f88346f2f918b9b",
+  "nethash": "bdc5bca0e59a33c94c1f1318f22cc481ff09433ba7ec395eba3eaa25a57499e7",
   "explorer": "http://80.208.227.80:4200",
   "token": "BIN",
   "subunit": "bintoshi",
   "symbol": "⟐",
   "fractionDigits": 8,
   "version": 25,
-  "wif": 157,
+  "wif": 205,
   "knownWallets": {
-    "BLYZpM2xi5sU6m75KBMihYBjVd6n3xSLrS": "Cartera Genesis Mainnet"
+    "BG2M5y6cB3XqN1xZmH8KNCaxXvXABnimfb": "Cartera Genesis Mainnet"
   }
 }
