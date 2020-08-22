@@ -2,7 +2,7 @@
   <div class="WalletButton__import">
     <RouterLink
       :to="{ name: 'wallet-import' }"
-      class="font-bold text-center text-whitex"
+      class="font-bold text-center text-whitex-dark-light"
     >
       <span
         v-tooltip="hideText ? $t('PAGES.WALLET_ALL.IMPORT_WALLET') : ''"

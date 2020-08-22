@@ -173,6 +173,7 @@ let colors = {
   'white': '#ffffff',
   'whitex': '#BDCCD4',
   'whitex-dark': '#0f011b',
+  'whitex-dark-light': '#210738',
   'purpurito': '#8800ff',
   'purpurero': '#471980',
   'whitex-light': '#A9B8BF',

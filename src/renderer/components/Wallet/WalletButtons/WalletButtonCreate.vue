@@ -2,7 +2,7 @@
   <div class="WalletButton__create">
     <RouterLink
       :to="{ name: 'wallet-new' }"
-      class="font-bold text-center text-whitex"
+      class="font-bold text-center text-whitex-dark-light"
     >
       <span
         v-tooltip="hideText ? $t('PAGES.WALLET_ALL.CREATE_WALLET') : ''"

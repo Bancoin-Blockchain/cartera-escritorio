@@ -1,7 +1,7 @@
 <template>
   <div class="WalletButton__export">
     <a
-      class="font-bold text-center text-whitex"
+      class="font-bold text-center text-whitex-dark-light"
       @click="toggle"
     >
       <span

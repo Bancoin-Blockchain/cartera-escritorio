@@ -457,6 +457,6 @@ input[type=range]::-webkit-slider-thumb {
   opacity: 0.5;
 }
 .InputFee__choice--active {
-  @apply .rounded .bg-theme-button-special-choice .text-red .p-1
+  @apply .rounded .bg-theme-button-special-choice .text-whitex .p-1
 }
 </style>
